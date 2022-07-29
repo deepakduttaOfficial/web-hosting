@@ -1,0 +1,477 @@
+/* Poppins font family  */
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+  scroll-behavior: smooth;
+}
+
+:root {
+  --defaultPadding: 2.5rem 4rem;
+  --skycolor: #509ef2;
+  --deepskycolor: #1c64ea;
+  --primaryColor: #1d2b4f;
+  --secondaryColor: #9ba1af;
+}
+
+body {
+  background-color: #fdfeff;
+}
+
+li {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+.menu-icon {
+  display: none;
+}
+
+/* -------------- Navbar style ------------ */
+nav {
+  padding: var(--defaultPadding);
+  display: flex;
+  align-items: center;
+}
+
+.brand {
+  flex-grow: 1;
+}
+
+.brand > img {
+  height: 40px;
+  filter: opacity(0.5) drop-shadow(0 0 0 #120660);
+}
+
+.nav-list {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.list-item {
+  margin: 0 5px;
+}
+
+.list-item-link {
+  color: #7d7d7d;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 5px 20px;
+  border-radius: 5px;
+  font-size: 18px;
+  font-family: "Poppins", sans-serif;
+  font-weight: 400;
+  cursor: pointer;
+}
+
+.nav-list > li:nth-child(1) > .list-item-link {
+  color: black;
+  font-weight: 500;
+}
+
+.list-item-link:hover {
+  text-decoration: underline;
+}
+
+.btn {
+  padding: 15px 30px;
+  font-size: 16px;
+  font-family: "Poppins", sans-serif;
+  font-weight: 600;
+  border-radius: 10px;
+  cursor: pointer;
+}
+
+.btn-outline {
+  border: 2px solid var(--skycolor);
+  color: var(--skycolor);
+  background-color: transparent;
+}
+
+.btn-outline:hover {
+  box-shadow: rgba(94, 172, 233, 0.35) 0px 5px 15px;
+}
+
+/* ------------------- */
+/* -------------- Domain section ------------ */
+
+#domain {
+  padding: var(--defaultPadding);
+}
+
+.domain-box {
+  margin: 6rem 0;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  padding: 50px 0;
+  border-radius: 14px;
+}
+
+.domain-heading {
+  font-size: 53px;
+  font-family: Poppins, sans-serif;
+  font-weight: 600;
+  line-height: 82px;
+}
+.domain-para {
+  color: #959595;
+  font-size: 17px;
+  font-family: Poppins, sans-serif;
+  font-weight: 300;
+  padding: 20px 80px 55px 0px;
+}
+
+.btn-content {
+  background: linear-gradient(166deg, #4ce1fd, #1f61ddd4);
+  border: none;
+  color: #ffffff;
+  box-shadow: rgb(0 128 189 / 35%) 0px 5px 15px;
+}
+
+.domain-img {
+  display: inline-block;
+}
+
+.server-img {
+  height: 380px;
+}
+.testing-img {
+  height: 330px;
+}
+
+.technical-img {
+  height: 500px;
+}
+
+.ml-120 {
+  margin-left: 120px;
+}
+/* ------------------------- */
+/* --------------- Hosting  ---------------- */
+
+#hosting {
+  padding: var(--defaultPadding);
+}
+
+.hosting-head {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+.w-50 {
+  width: 50%;
+}
+
+.hosting-title {
+  font-size: 53px;
+  font-family: Poppins, sans-serif;
+  font-weight: 600;
+  color: var(--primaryColor);
+}
+.hosting-subtitle {
+  color: var(--secondaryColor);
+  font-size: 14px;
+  font-family: Poppins, sans-serif;
+  font-weight: 300;
+  padding-left: 70px;
+}
+
+/* --------------------------- */
+/* -------------- Features ----------- */
+#features {
+  padding: var(--defaultPadding);
+}
+
+.features-container {
+  margin: 50px 0;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.features-item {
+  padding: 10px;
+  background-color: #fff;
+  margin: 40px 0;
+  display: inline;
+  width: 370px;
+}
+.features-img {
+  height: 40px;
+}
+.features-heading {
+  font-size: 27px;
+  color: var(--primaryColor);
+  margin: 20px 0px;
+}
+.features-para {
+  font-size: 14px;
+  color: var(--secondaryColor);
+}
+/* --------------------------- */
+
+/* -------- Pricing ------------- */
+#pricing {
+  background: linear-gradient(166deg, #4ce1fd, #1f61ddd4);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 40px;
+  margin: 50px 0;
+}
+
+.price-title {
+  text-align: center;
+  color: #ffffff;
+  font-size: 45px;
+}
+
+.price-container {
+  margin-top: 30px;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  flex-direction: row;
+}
+
+.price-box {
+  background-color: #ffffff;
+  margin: 20px 15px;
+  border-radius: 10px;
+  padding-bottom: 30px;
+}
+
+.price-box-head {
+  padding: 20px;
+  border-radius: 10px;
+}
+
+.price-box-head > h1 {
+  font-size: 25px;
+  color: var(--primaryColor);
+  font-weight: 600;
+  margin: 10px 0;
+}
+
+.price-box-head > p {
+  font-size: 14px;
+  color: var(--secondaryColor);
+}
+
+.price-box-body {
+  padding: 10px 20px;
+  margin-top: 10px;
+}
+
+.price-box-icon {
+  display: flex;
+  align-items: center;
+  margin: 4px 85px 4px 0;
+  padding: 10px 0;
+}
+
+.price-icon {
+  height: 18px;
+}
+.icon-para {
+  margin-left: 20px;
+  font-size: 14px;
+  font-weight: 500;
+}
+
+.price-box-footer {
+  margin-top: 50px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.price-box-footer > h1 {
+  color: var(--primaryColor);
+  font-size: 30px;
+}
+.price-box-footer > h1 > span {
+  color: var(--secondaryColor);
+}
+
+.price-box-footer > p {
+  font-size: 15px;
+  color: #798196;
+  margin: 5px 0 30px;
+}
+
+.bg-black {
+  background-color: #353535;
+}
+
+#color-white {
+  color: #ffffff;
+}
+/* ---------------------------- */
+/* ------------ About ------------ */
+
+#about {
+  padding: var(--defaultPadding);
+  margin: 100px 0;
+}
+
+.about-titlebar {
+  margin: 30px 0;
+}
+
+.about-titlebar > h1 {
+  text-align: center;
+  font-size: 50px;
+  color: var(--primaryColor);
+  margin: 20px;
+}
+.about-titlebar > p {
+  text-align: center;
+  font-size: 15px;
+  color: var(--secondaryColor);
+  margin: 10px;
+}
+/* ----  */
+
+.about-box-container {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+
+.about-box {
+  background-color: #ffffff;
+  padding: 34px;
+  box-shadow: rgb(50 50 93 / 25%) 0px 6px 12px -2px,
+    rgb(0 0 0 / 30%) 0px 3px 7px -3px;
+  border-radius: 16px;
+  margin: 20px 0;
+  width: 600px;
+}
+
+.about-box > p {
+  line-height: 27px;
+  color: var(--primaryColor);
+  font-weight: 500;
+}
+
+.profile-holder {
+  margin: 40px 0;
+  display: flex;
+  align-items: center;
+}
+.profile-holder > img {
+  height: 85px;
+}
+
+.profile-holder-details {
+  margin-left: 20px;
+}
+.profile-holder-details > h2 {
+  margin: 10px 0;
+  color: var(--primaryColor);
+  font-size: 19px;
+}
+.profile-holder-details > p {
+  color: var(--secondaryColor);
+  font-weight: 400;
+  font-size: 16px;
+}
+/* ------------------------------------- */
+/* ------------ Register ---------------- */
+
+#register {
+  padding: var(--defaultPadding);
+  background: url("../images/footer-bg.svg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 20px 0;
+}
+
+.register-content {
+  padding: 40px;
+}
+.register-content > h1 {
+  font-size: 50px;
+  color: #ffffff;
+  margin: 15px 0;
+}
+.register-content > p {
+  font-size: 15px;
+  font-weight: 500;
+  color: #cccdd5;
+}
+
+.register-button > a {
+  color: #b6cbef;
+  border: 2px solid #b6cbef;
+}
+
+/* -------------------- */
+/* --------- Footer ----------- */
+
+#footer {
+  margin: 80px 0 40px;
+  padding: var(--defaultPadding);
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.m-25 {
+  margin: 25px 0;
+}
+.footer-brand > p {
+  color: var(--secondaryColor);
+  font-size: 15px;
+  width: 277px;
+}
+
+.footer-link {
+  width: 100px;
+}
+.footer-link > h2 {
+  color: var(--primaryColor);
+}
+
+.footer-link > p {
+  color: var(--secondaryColor);
+  font-size: 15px;
+}
+.footer-link > p:hover {
+  cursor: pointer;
+  text-decoration: underline;
+}
+
+/* ---------secial-midea-icon ------- */
+
+.social-media {
+  width: 160px;
+}
+
+.secial-midea-icon {
+  display: flex;
+  justify-content: space-between;
+}
+
+.secial-midea-icon > a > img {
+  height: 30px;
+}
+
+/* --------------- Complete ---------------------- */
